@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Glosario</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/templatemo.css">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="../assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Load fonts style after rendering the layout styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="../assets/css/fontawesome.min.css">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
+        <div class="container d-flex justify-content-between align-items-center">
+
+            <img class="navbar-brand text-success logo h1 align-self-center" href="../index.html">
+            <img src="../assets/img/logo_vue.png" width="100px" alt="logo vue">
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between"
+                id="templatemo_main_nav">
+                <div class="flex-fill">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../features.html">Características</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../resources.html">Recursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../sponsor.html">Patrocinador</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../about.html">Acerca de</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar align-self-center d-flex">
+                    <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ...">
+                            <div class="input-group-text">
+                                <i class="fa fa-fw fa-search"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal"
+                        data-bs-target="#templatemo_search">
+                        <i class="fa fa-fw fa-search text-dark mr-2"></i>
+                    </a>
+                    <a class="nav-icon d-none d-lg-inline" href="https://github.com/vuejs/">
+                        <i class="bi bi-github"></i>
+                    </a>
+
+                    <a class="nav-icon d-none d-lg-inline" href="https://x.com/vuejs">
+                        <i class="bi bi-twitter-x"></i>
+                    </a>
+                    <a class="nav-icon d-none d-lg-inline" href="https://discord.com/invite/vue">
+                        <i class="bi bi-discord"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <!-- Close Header -->
+
+    <!-- Modal -->
+    <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="w-100 pt-1 mb-5 text-right">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="" method="get" class="modal-content modal-body border-0 p-0">
+                <div class="input-group mb-2">
+                    <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Search ...">
+                    <button type="submit" class="input-group-text bg-success text-light">
+                        <i class="fa fa-fw fa-search text-white"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <section class="bg-light py-3">
+        <div class="container">
+            <!-- <div class="row align-items-center py-5"> -->
+                <!-- <div class="col-md-12 text-center"> -->
+                    <h1>Glosario</h1>
+                    <p>Este glosario tiene como objetivo proporcionar orientación sobre los significados de los términos técnicos que se utilizan 
+                        habitualmente cuando se habla de Vue. Su objetivo es describir cómo se utilizan habitualmente los términos, no 
+                        es una especificación prescriptiva de cómo deben utilizarse. Algunos términos pueden tener significados o 
+                        matices ligeramente diferentes según el contexto en el que se encuentren.
+                    </p>
+                    
+                    <h5>1. API de composición:</h5>
+                    <p>La API de composición es una colección de funciones que se utilizan para escribir componentes y elementos componibles en Vue.
+                        <br>
+                        El término también se utiliza para describir uno de los dos estilos principales que se utilizan para escribir componentes; 
+                        el otro es la API de opciones. Los componentes escritos con la API de composición utilizan una 
+                        función <code>&lt;script setup&gt;</code> explícita <code>.setup()</code>.
+                    </p>
+                    
+                    <h5>2. API de reactividad:</h5>
+                    <p>La API de reactividad es una colección de funciones básicas de Vue relacionadas con la reactividad. 
+                        Estas se pueden usar independientemente de los componentes. Incluye funciones como ref(), reactive(), 
+                        computed(), watch()y watchEffect().
+                        <br>
+                        La API de reactividad es un subconjunto de la API de composición.
+                    </p>
+
+                    <h5>3. Componente:</h5>
+                    <p>El término componente no es exclusivo de Vue. Es común en muchos marcos de interfaz de usuario. 
+                        Describe una parte de la interfaz de usuario, como un botón o una casilla de verificación. 
+                        Los componentes también se pueden combinar para formar componentes más grandes.
+                        <br>
+                        Los componentes son el mecanismo principal proporcionado por Vue para dividir una interfaz de 
+                        usuario en partes más pequeñas, tanto para mejorar la capacidad de mantenimiento como para 
+                        permitir la reutilización del código.
+                        <br>
+                        Un componente Vue es un objeto. Todas las propiedades son opcionales, pero se requiere 
+                        una plantilla o una función de renderizado para que el componente se renderice.
+                    </p>
+
+                    <h5>4. Componente asincrónico:</h5>
+                    <p>Un componente asincrónico es un contenedor alrededor de otro componente que permite que el componente 
+                        contenedor se cargue de forma diferida. Esto se utiliza normalmente como una forma de reducir el 
+                        tamaño de los .jsarchivos compilados, lo que permite dividirlos en fragmentos más pequeños que se 
+                        cargan solo cuando es necesario.
+                        <br>
+                        Vue Router tiene una característica similar para la carga diferida de componentes de ruta, 
+                        aunque no utiliza la característica de componentes asíncronos de Vue.
+                    </p>
+
+                    <h5>5. Componente dinámico:</h5>
+                    <p>El término componente dinámico se utiliza para describir casos en los que la elección de qué 
+                        componente secundario se va a representar debe realizarse de forma dinámica. Normalmente, 
+                        esto se logra mediante <code>&lt;component :is="type"&gt;</code>
+                        <br>
+                        Un componente dinámico no es un tipo especial de componente. Cualquier componente puede utilizarse 
+                        como componente dinámico. Lo que es dinámico es la elección del componente, no el componente en sí.
+                    </p>
+
+                    <h5>6. Componente funcional:</h5>
+                    <p>Una definición de componente suele ser un objeto que contiene opciones. Puede que no parezca así 
+                        si estás usando <code>&lt;script setup&gt;</code>, pero el componente exportado desde el .vue archivo 
+                        seguirá siendo un objeto.
+                        <br>
+                        Un componente funcional es una forma alternativa de componente que se declara mediante una 
+                        función. Esa función actúa como función de representación del componente.
+                        <br>
+                        Un componente funcional no puede tener ningún estado propio. Tampoco pasa por el ciclo de vida 
+                        habitual de los componentes, por lo que no se pueden utilizar ganchos de ciclo de vida. 
+                        Esto los hace ligeramente más livianos que los componentes normales con estado.
+                    </p>
+
+                    <h5>7. Componente web:</h5>
+                    <p>El estándar de componentes web es una colección de características implementadas en los navegadores 
+                        web modernos.
+                        <br>
+                        Los componentes de Vue no son componentes web, pero defineCustomElement() se pueden utilizar para crear 
+                        un elemento personalizado a partir de un componente de Vue. Vue también admite el uso de elementos 
+                        personalizados dentro de los componentes de Vue.
+                    </p>
+
+                    <h5>8. Componible:</h5>
+                    <p>El término "componible" describe un patrón de uso común en Vue. No es una característica 
+                        independiente de Vue, es solo una forma de usar la API de composición del marco.
+                    </p>
+
+                    <h5>9. Directiva:</h5>
+                    <p>El término directiva se refiere a los atributos de plantilla que comienzan con el v-prefijo o 
+                        sus abreviaturas equivalentes.
+                        <br>
+                        Las directivas integradas incluyen v-if, v-for, v-bind, v-ony v-slot.
+                        <br>
+                        Vue también admite la creación de directivas personalizadas, aunque normalmente solo se utilizan 
+                        como una "vía de escape" para manipular nodos DOM directamente. Las directivas personalizadas 
+                        generalmente no se pueden utilizar para recrear la funcionalidad de las directivas integradas.
+                    </p>
+
+                    <h5>10. DOM Virtual:</h5>
+                    <p>El término DOM virtual (VDOM) no es exclusivo de Vue. Es un enfoque común que utilizan varios 
+                        marcos web para gestionar actualizaciones de la interfaz de usuario.
+                        <br>
+                        Los navegadores utilizan un árbol de nodos para representar el estado actual de la página. Ese 
+                        árbol y las API de JavaScript que se utilizan para interactuar con él se denominan modelo de 
+                        objetos de documento o DOM.
+                        <br>
+                        La manipulación del DOM es un importante obstáculo para el rendimiento. El DOM virtual ofrece 
+                        una estrategia para gestionarlo. En lugar de crear nodos DOM directamente, los componentes Vue 
+                        generan una descripción de los nodos DOM que desean. Estos descriptores son objetos JavaScript 
+                        simples, conocidos como VNodes (nodos DOM virtuales). La creación de VNodes es relativamente económica.
+                    </p>
+
+                    <h5>11. Ganchos de ciclo de vida:</h5>
+                    <p>Una instancia de componente de Vue pasa por un ciclo de vida. Por ejemplo, se crea, se monta, se actualiza 
+                        y se desmonta.
+                        <br>
+                        Los ganchos del ciclo de vida son una forma de escuchar estos eventos del ciclo de vida
+                        <br>
+                        Con la API de opciones, cada gancho se proporciona como una opción independiente, por 
+                        ejemplo mounted. La API de composición utiliza funciones, como onMounted().
+
+                    <h5>12. Izamiento:</h5>
+                    <p>El término "elevarse " se utiliza para describir la ejecución de una sección de código antes de alcanzarla, 
+                        antes que de otro código. La ejecución se "eleva" a un punto anterior.
+                        <br>
+                        var JavaScript utiliza elevación para algunas construcciones , como importy declaraciones de funciones.
+                        <br>
+                        En un contexto de Vue, el compilador de plantillas aplica elevación estática para mejorar el rendimiento. 
+                        Al convertir una plantilla en una función de renderización, los VNodes que corresponden a contenido 
+                        estático se pueden crear una vez y luego reutilizar. Estos VNodes estáticos se describen como elevados 
+                        porque se crean fuera de la función de renderización, antes de que se ejecute. Una forma similar de 
+                        elevación se aplica a los objetos estáticos o matrices que genera el compilador de plantillas.
+                    </p>
+
+                    <h5>13. Nodo Virtual:</h5>
+                    <p>Un VNode es un nodo DOM virtual . Se pueden crear utilizando la h() función.
+                    </p>
+
+                    <h5>14. Ranura:</h5>
+                    <p>Los slots se utilizan para pasar contenido a los componentes secundarios. Mientras que los props se 
+                        utilizan para pasar valores de datos, los slots se utilizan para pasar contenido más completo que 
+                        consta de elementos HTML y otros componentes de Vue.
+                    </p>
+
+                 <!-- </div> -->
+            <!-- </div> -->
+        </div>
+    </section>
+    <!-- End Main Content -->
+
+    <!-- Footer -->
+    <footer class="bg-dark" id="tempaltemo_footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Columna para las dos imágenes -->
+                <div class="col-md-4 pt-5 d-flex align-items-center">
+                    <!-- Imagen de UES -->
+                    <img src="../assets/img/UES.png" width="170px" alt="logo UES">
+                    <!-- Imagen de EISI alineada a la derecha de la anterior -->
+                    <img src="../assets/img/eisi.png" width="170px" alt="logo EISI" style="margin-left: 15px;">
+                </div>
+                <!-- Columna para la información -->
+                <div class="col-md-6 offset-md-2 pt-5">
+                    <!-- Información a la derecha de las imágenes -->
+                    <p style="color: white;">Examen Parcial 1</p>
+                    <p style="color: white;">Tecnicas de Programación para Internet - TPI115</p>
+                    <p style="color: white;">Gustavo Alejandro Sanchez Chavez - SC21034</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Start Script -->
+    <script src="assets/js/jquery-1.11.0.min.js"></script>
+    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/templatemo.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <!-- End Script -->
+</body>
+
+</html>
